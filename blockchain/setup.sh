@@ -1,19 +1,17 @@
 # These are the requirements to set up the blockchain
 
-# Tutorial found here
-# https://medium.freecodecamp.org/from-what-is-blockchain-to-building-a-blockchain-within-an-hour-4e738efc819d
+# These need to be installed on your system, you should be able to run these commands to do so
+# sudo apt install curl
+# curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+# nvm install node
+# nvm use node
+# npm install
 
 
-sudo apt-get install -y software-properties-common
-sudo add-apt-repository -y ppa:ethereum/ethereum
-sudo apt-get update
-sudo apt-get install -y ethereum
 
-mkdir eth-new
-cd eth-new
-vi genesis.json
-cd ..
-
-
-mkdir eth-data
-geth --datadir eth-new genesis.json init eth-new/genesis.json --networkid 123 --nodiscover --maxpeers 0 console
+killall -9 node
+curl http://localhost:3001/peers
+HTTP_PORT=3001 P2P_PORT=6001 npm start &
+HTTP_PORT=3002 P2P_PORT=6002 PEERS=ws://localhost:6001 npm start &
+curl -H "Content-type:application/json" --data '{"data" : "Some data to the first block"}' http://localhost:3001/mineBlock
+echo
