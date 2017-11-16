@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6qt-wp-Z1O">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,6 +38,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--ID Scanner View Controller-->
+        <scene sceneID="hRF-gT-Vu6">
+            <objects>
+                <viewController title="ID Scanner View Controller" id="6qt-wp-Z1O" customClass="IDScannerViewController" customModule="Moi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8we-Pg-LKm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch to Scan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAS-K8-bZ3">
+                                <rect key="frame" x="101" y="496.5" width="173" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="1y5-ZQ-3T4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.75582398279999996" green="0.78259350000000005" blue="0.80519349090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="hQj-Ks-4aN" firstAttribute="bottom" secondItem="KAS-K8-bZ3" secondAttribute="bottom" constant="139" id="7PJ-oJ-Apq"/>
+                            <constraint firstItem="KAS-K8-bZ3" firstAttribute="centerX" secondItem="hQj-Ks-4aN" secondAttribute="centerX" id="bn4-sz-Glu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hQj-Ks-4aN"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DL8-er-Jsh" appends="YES" id="nMQ-qF-4eC"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="touchLabel" destination="KAS-K8-bZ3" id="zKS-vl-BqW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KfI-5g-6PP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DL8-er-Jsh">
+                    <connections>
+                        <action selector="tapHandler:" destination="6qt-wp-Z1O" id="OiW-J3-3Sw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1036" y="136.28185907046478"/>
         </scene>
     </scenes>
 </document>

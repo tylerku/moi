@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1511103526C2D88AE3EA718B /* Pods_Moi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D124F3EC9A2F4F895FA0BDF8 /* Pods_Moi.framework */; };
 		40F669B31F8EDEE90038F058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F669B21F8EDEE90038F058 /* AppDelegate.swift */; };
 		40F669B51F8EDEE90038F058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F669B41F8EDEE90038F058 /* ViewController.swift */; };
 		40F669B81F8EDEE90038F058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F669B61F8EDEE90038F058 /* Main.storyboard */; };
 		40F669BA1F8EDEE90038F058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F669B91F8EDEE90038F058 /* Assets.xcassets */; };
 		40F669BD1F8EDEE90038F058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F669BB1F8EDEE90038F058 /* LaunchScreen.storyboard */; };
 		40F669C51F8EE54B0038F058 /* FacialScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F669C41F8EE54B0038F058 /* FacialScannerViewController.swift */; };
+		640716E31FAAA074002012BF /* IDScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640716E21FAAA074002012BF /* IDScannerViewController.swift */; };
+		64FD06251FBDF8A10049672D /* IDScannerPPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD06241FBDF8A10049672D /* IDScannerPPExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		40F669BC1F8EDEE90038F058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40F669BE1F8EDEE90038F058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40F669C41F8EE54B0038F058 /* FacialScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialScannerViewController.swift; sourceTree = "<group>"; };
+		46B2D102073E355B2ABA0767 /* Pods-Moi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moi/Pods-Moi.release.xcconfig"; sourceTree = "<group>"; };
+		640716E21FAAA074002012BF /* IDScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDScannerViewController.swift; sourceTree = "<group>"; };
+		64FD06241FBDF8A10049672D /* IDScannerPPExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDScannerPPExtension.swift; sourceTree = "<group>"; };
+		D124F3EC9A2F4F895FA0BDF8 /* Pods_Moi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF181B43E855D829A94B2C5D /* Pods-Moi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moi/Pods-Moi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1511103526C2D88AE3EA718B /* Pods_Moi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				40F669B11F8EDEE90038F058 /* Moi */,
 				40F669B01F8EDEE90038F058 /* Products */,
+				CF5FE93199C3287E0CD8D701 /* Pods */,
+				D1AC7F887EE58C152E5BA63F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,27 @@
 				40F669BB1F8EDEE90038F058 /* LaunchScreen.storyboard */,
 				40F669BE1F8EDEE90038F058 /* Info.plist */,
 				40F669C41F8EE54B0038F058 /* FacialScannerViewController.swift */,
+				640716E21FAAA074002012BF /* IDScannerViewController.swift */,
+				64FD06241FBDF8A10049672D /* IDScannerPPExtension.swift */,
 			);
 			path = Moi;
+			sourceTree = "<group>";
+		};
+		CF5FE93199C3287E0CD8D701 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF181B43E855D829A94B2C5D /* Pods-Moi.debug.xcconfig */,
+				46B2D102073E355B2ABA0767 /* Pods-Moi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1AC7F887EE58C152E5BA63F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D124F3EC9A2F4F895FA0BDF8 /* Pods_Moi.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40F669C11F8EDEE90038F058 /* Build configuration list for PBXNativeTarget "Moi" */;
 			buildPhases = (
+				8DACD6F6E67CB5066631B21B /* [CP] Check Pods Manifest.lock */,
 				40F669AB1F8EDEE90038F058 /* Sources */,
 				40F669AC1F8EDEE90038F058 /* Frameworks */,
 				40F669AD1F8EDEE90038F058 /* Resources */,
+				A1B7255A394663F8EEAC4DC3 /* [CP] Embed Pods Frameworks */,
+				88BFE05336CB68C5EFF88BC6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,13 +167,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88BFE05336CB68C5EFF88BC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Moi/Pods-Moi-resources.sh",
+				"${PODS_ROOT}/PPBlinkID/MicroBlink.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moi/Pods-Moi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DACD6F6E67CB5066631B21B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B7255A394663F8EEAC4DC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Moi/Pods-Moi-frameworks.sh",
+				"${PODS_ROOT}/PPBlinkID/MicroBlink.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MicroBlink.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moi/Pods-Moi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		40F669AB1F8EDEE90038F058 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				40F669B51F8EDEE90038F058 /* ViewController.swift in Sources */,
+				64FD06251FBDF8A10049672D /* IDScannerPPExtension.swift in Sources */,
 				40F669B31F8EDEE90038F058 /* AppDelegate.swift in Sources */,
+				640716E31FAAA074002012BF /* IDScannerViewController.swift in Sources */,
 				40F669C51F8EE54B0038F058 /* FacialScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,14 +368,18 @@
 		};
 		40F669C21F8EDEE90038F058 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF181B43E855D829A94B2C5D /* Pods-Moi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "DigiCert Assured ID CA-1";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GSL3S66B2;
+				DEVELOPMENT_TEAM = B5522LYXPN;
 				INFOPLIST_FILE = Moi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tyudy.Moi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,14 +387,18 @@
 		};
 		40F669C31F8EDEE90038F058 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B2D102073E355B2ABA0767 /* Pods-Moi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "DigiCert Assured ID CA-1";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GSL3S66B2;
+				DEVELOPMENT_TEAM = B5522LYXPN;
 				INFOPLIST_FILE = Moi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tyudy.Moi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
