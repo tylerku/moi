@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400E4B171FC0ED87002E192F /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400E4B161FC0ED87002E192F /* PreviewView.swift */; };
 		40F669B31F8EDEE90038F058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F669B21F8EDEE90038F058 /* AppDelegate.swift */; };
 		40F669B51F8EDEE90038F058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F669B41F8EDEE90038F058 /* ViewController.swift */; };
 		40F669B81F8EDEE90038F058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F669B61F8EDEE90038F058 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		400E4B161FC0ED87002E192F /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		40F669AF1F8EDEE90038F058 /* Moi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F669B21F8EDEE90038F058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F669B41F8EDEE90038F058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				40F669BB1F8EDEE90038F058 /* LaunchScreen.storyboard */,
 				40F669BE1F8EDEE90038F058 /* Info.plist */,
 				40F669C41F8EE54B0038F058 /* FacialScannerViewController.swift */,
+				400E4B161FC0ED87002E192F /* PreviewView.swift */,
 			);
 			path = Moi;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F669B51F8EDEE90038F058 /* ViewController.swift in Sources */,
+				400E4B171FC0ED87002E192F /* PreviewView.swift in Sources */,
 				40F669B31F8EDEE90038F058 /* AppDelegate.swift in Sources */,
 				40F669C51F8EE54B0038F058 /* FacialScannerViewController.swift in Sources */,
 			);
